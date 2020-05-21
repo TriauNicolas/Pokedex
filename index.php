@@ -1,7 +1,7 @@
 <?php
 
-    include './config.php';
-    include './functions.php';
+    include './includes/config.php';
+    include './includes/functions.php';
     
 
     // Variable GET
@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <title>Pokédex</title>
 </head>
 <body>
@@ -141,6 +141,6 @@
         let color_type_1 = '<?= $data->types[0]->type->name ; ?>'
         let color_type_2 = '<?= $data->types[1]->type->name ; ?>'
     </script>
-    <script src="main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
