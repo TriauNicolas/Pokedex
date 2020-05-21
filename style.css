@@ -1,0 +1,340 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #ED4C67;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #b9b9b9;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.black_line {
+  position: absolute;
+  width: 100vw;
+  height: 50px;
+  background: #1e272e;
+  position: absolute;
+  z-index: 90;
+}
+
+.pokeball {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: #1e272e;
+  position: absolute;
+  top: -7vh;
+  left: 46.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+}
+.pokeball .second_circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pokeball .third_circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #fff;
+  border: solid 5px #1e272e;
+}
+.pokeball .third_circle:hover {
+  background: #FF0000;
+}
+
+.buttons_pokedex {
+  width: 17vw;
+  height: 15vh;
+  position: absolute;
+  top: 9%;
+  margin: 0 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 0px 8px #000;
+}
+.buttons_pokedex .main_button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 0.5vw;
+  background: radial-gradient(circle at 20px 40px, #dcdde1, #0652DD);
+}
+.buttons_pokedex .other_buttons {
+  width: 10vw;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons_pokedex .other_buttons .secondary_buttons {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+}
+.buttons_pokedex .other_buttons .first_button {
+  background: radial-gradient(circle at 20px 20px, #dcdde1, #d63031);
+}
+.buttons_pokedex .other_buttons .second_button {
+  background: radial-gradient(circle at 20px 20px, #dcdde1, #ffa801);
+}
+.buttons_pokedex .other_buttons .third_button {
+  background: radial-gradient(circle at 20px 20px, #dcdde1, #00b894);
+}
+
+.middle_break {
+  width: 2vw;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  background: #d63031;
+  box-shadow: 2px 0px 8px #000;
+}
+
+.pictures_pokemon {
+  width: 35vw;
+  height: 25vh;
+  position: absolute;
+  top: 15%;
+  left: 58%;
+  background: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #000;
+}
+.pictures_pokemon .front_side {
+  width: 150px;
+  height: 150px;
+  margin-right: 4vw;
+}
+.pictures_pokemon .pictures_break {
+  width: 2px;
+  height: 25vh;
+  background: #000;
+}
+.pictures_pokemon .back_side {
+  width: 150px;
+  height: 150px;
+  margin-left: 4.5vw;
+}
+
+.types {
+  width: 30vw;
+  height: 10vh;
+  position: absolute;
+  top: 45%;
+  left: 60.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.types .types_break {
+  width: 2px;
+  height: 10vh;
+  background: #000;
+}
+.types .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.types .type_1 {
+  width: 15vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.types .type_2 {
+  width: 15vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.informations {
+  width: 20vw;
+  height: 5vh;
+  position: absolute;
+  top: 62%;
+  left: 65.5%;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.abilities {
+  width: 25vw;
+  height: 25vh;
+  position: absolute;
+  top: 70%;
+  left: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 150;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: #3d3d3d;
+  border: solid 3px #000;
+}
+.abilities .moves {
+  color: #fff;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+.title_moves {
+  width: 13vw;
+  height: 5vh;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+  text-decoration: underline;
+  color: #f5f6fa;
+}
+
+.search_and_buttons {
+  width: 35vw;
+  height: 20vh;
+  position: absolute;
+  top: 35%;
+  left: 6%;
+}
+.search_and_buttons .name_pokemon {
+  width: 100%;
+  height: 10vh;
+  background: #3d3d3d;
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: solid 3px #000;
+}
+.search_and_buttons .form_search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5vh 0vw;
+}
+.search_and_buttons .form_search .search {
+  width: 90%;
+  height: 3vh;
+  margin: 0vh 1vw 0vh 0vw;
+  text-align: center;
+}
+.search_and_buttons .form_search .button_search {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0vh 1vw 0vh 2vw;
+  background: #ffa502;
+  border-radius: 50%;
+}
+.search_and_buttons .container_buttons {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.search_and_buttons .container_buttons .button_number {
+  width: 132px;
+  height: 40px;
+  background: #0c2461;
+  color: #fff;
+  border: 0.1px solid rgba(0, 0, 0, 0.425);
+}
+
+/*# sourceMappingURL=style.css.map */
